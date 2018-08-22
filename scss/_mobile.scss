@@ -1,0 +1,161 @@
+// Widescreens
+@include mediaXl{
+    .projects-section {
+        .projects {
+        
+        }
+    }
+}
+  
+// Desktops & Laptops
+@include mediaLg {
+    nav {
+        display: flex;
+        justify-content: center;
+        font-size: 1.8rem;
+    }
+
+    .about-section {
+        padding: 10vh 0;
+        img {
+            width: 40%;
+            padding: 0;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+    }
+
+
+}
+  
+// Tablets & Small Laptops
+@include mediaMd {
+    nav {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .about-section {
+        padding: 10vh 0;
+        img {
+            width: 50%;
+            padding: 0;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    .projects-section {
+        .projects {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+  
+// Smartphones
+@include mediaSm {
+    .container {
+        width: 90%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+
+        ul {
+
+            a {
+                padding: 10px;
+            }
+        }
+    }
+
+    nav.white {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        height: 60px;
+
+        a {
+            line-height: 60px;
+        }
+    }
+    
+
+    .home-section {
+        h1 {
+            font-size: 1.7rem;
+            letter-spacing: 5px;
+        }
+
+        span {
+            font-size: 0.8rem;
+        }
+
+        .btn {
+            font-size: 1.2rem;
+        }
+    }
+
+    .about-section {
+        padding: 10vh 0;
+        img {
+            width: 70%;
+            padding: 0;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    .projects-section {
+        padding-bottom: 70px;
+
+        .projects {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .contact-section {
+        height: 110vh;    
+
+        h3 {
+            padding-top: 8vh;
+        }
+
+        form {
+            width: 100%;
+
+            input[type=submit] {
+                padding: 14px 20px;
+            }
+        }
+    }
+
+    .footer {
+        padding-top: 20px;
+    }
+}    
+
+@include mediaXs {
+    nav ul a {
+        padding: 6px;
+    }
+
+    .about-section {
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
+    .contact-section {
+        height: 120vh;
+    }
+}
