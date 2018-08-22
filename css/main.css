@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Gravity-Bold";
+  src: url("../fonts/Gravity-Bold.otf"); }
+
+@font-face {
+  font-family: "Gravity-Regular";
+  src: url("../fonts/Gravity-Regular.otf"); }
+
+@font-face {
+  font-family: "Gravity-Light";
+  src: url("../fonts/Gravity-Light.otf"); }
+
+@font-face {
+  font-family: "Gravity-Book";
+  src: url("../fonts/Gravity-Book.otf"); }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gravity-Regular"; }
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden; }
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  padding: 10px 100px;
+  box-sizing: border-box; }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; }
+    nav ul a {
+      line-height: 80px;
+      color: #fff;
+      padding: 12px 30px;
+      text-decoration: none;
+      transition: all 0.3s ease-out; }
+      nav ul a:hover {
+        background: rgba(255, 255, 255, 0.1); }
+
+/* Navbar when scrolling */
+nav.white {
+  background: white;
+  height: 60px;
+  padding: 10px 100px;
+  z-index: 1; }
+  nav.white a {
+    color: #000;
+    line-height: 40px; }
+
+/* Home */
+.home-section {
+  background: url(../img/nature.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center; }
+  .home-section h1 {
+    margin-top: 38vh;
+    font-size: 3rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #fff; }
+  .home-section span {
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: #fff; }
+  .home-section .btn {
+    margin-top: 20vh;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 500ms ease; }
+    .home-section .btn:hover {
+      background: #686b74; }
+  .home-section i {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px; }
+  .home-section .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); }
+
+/* About Me */
+.about-section {
+  height: 90vh;
+  padding-top: 20vh;
+  display: inline-block; }
+  .about-section img {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 25%; }
+
+/* My Projects */
+.projects-section {
+  width: 100%;
+  background: #555;
+  padding-bottom: 150px; }
+  .projects-section h3 {
+    padding: 50px 0;
+    font-size: 1.6rem;
+    color: #fff; }
+  .projects-section .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem; }
+    .projects-section .projects img {
+      width: 100%;
+      box-sizing: border-box;
+      border: 3px solid #fff; }
+      .projects-section .projects img:hover {
+        opacity: 0.5;
+        transition: all 0.3s ease-out;
+        border: 3px solid #1e90ff;
+        z-index: 3; }
+    .projects-section .projects .btn-light {
+      display: block;
+      padding: 0.5rem 1rem;
+      margin-bottom: 0.3rem;
+      background: white;
+      color: #000;
+      text-decoration: none; }
+      .projects-section .projects .btn-light:hover {
+        background: #222222;
+        color: #fff; }
+
+/* Contact Me */
+.contact-section {
+  background: #fff;
+  width: 100%;
+  height: 100vh; }
+  .contact-section h3 {
+    padding-top: 12vh;
+    font-size: 1.6rem; }
+  .contact-section form {
+    display: block;
+    width: 50%;
+    margin: 5vh auto 0 auto; }
+  .contact-section input[type=text] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; }
+  .contact-section textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; }
+  .contact-section input[type=submit] {
+    background: #1e90ff;
+    color: #fff;
+    padding: 14px 40px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s ease-out; }
+    .contact-section input[type=submit]:hover {
+      background: #007cf4; }
+
+/* Footer */
+.footer {
+  background: #000;
+  height: 6vh;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding-top: 30px; }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem; }
+  .about-section {
+    padding: 10vh 0; }
+    .about-section img {
+      width: 40%;
+      padding: 0; }
+    .about-section p {
+      font-size: 1.8rem; } }
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem; }
+  .about-section {
+    padding: 10vh 0; }
+    .about-section img {
+      width: 50%;
+      padding: 0; }
+    .about-section p {
+      font-size: 1.4rem; }
+  .projects-section .projects {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%; }
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 0; }
+    nav ul a {
+      padding: 10px; }
+  nav.white {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    height: 60px; }
+    nav.white a {
+      line-height: 60px; }
+  .home-section h1 {
+    font-size: 1.7rem;
+    letter-spacing: 5px; }
+  .home-section span {
+    font-size: 0.8rem; }
+  .home-section .btn {
+    font-size: 1.2rem; }
+  .about-section {
+    padding: 10vh 0; }
+    .about-section img {
+      width: 70%;
+      padding: 0; }
+    .about-section p {
+      font-size: 0.9rem; }
+  .projects-section {
+    padding-bottom: 70px; }
+    .projects-section .projects {
+      grid-template-columns: 1fr; }
+  .contact-section {
+    height: 110vh; }
+    .contact-section h3 {
+      padding-top: 8vh; }
+    .contact-section form {
+      width: 100%; }
+      .contact-section form input[type=submit] {
+        padding: 14px 20px; }
+  .footer {
+    padding-top: 20px; } }
+
+@media screen and (max-width: 320px) {
+  nav ul a {
+    padding: 6px; }
+  .about-section p {
+    font-size: 0.8rem; }
+  .contact-section {
+    height: 120vh; } }
